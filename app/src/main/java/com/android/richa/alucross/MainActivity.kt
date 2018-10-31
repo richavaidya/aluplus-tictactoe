@@ -150,6 +150,15 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, "Winner is Mr. Player: " + winner, Toast.LENGTH_LONG).show()
             getResult()
         }
+        else
+        {
+            var totalBtnClick = player1.count() + player2.count()
+            if(totalBtnClick == 9)
+            {
+                Toast.makeText(this, "Game Draw", Toast.LENGTH_LONG).show()
+                getResult()
+            }
+        }
     }
 
         fun getResult(){

@@ -32,8 +32,8 @@
             android:id="@+id/btn3"
             android:layout_width="40pt"
             android:layout_height="40pt"
-            android:onClick="btnClick"
             android:gravity="center"
+            android:onClick="btnClick"
             android:text="" />
     </TableRow>
 
@@ -70,7 +70,8 @@
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent" android:gravity="center">
+        android:layout_height="match_parent"
+        android:gravity="center">
 
         <Button
             android:id="@+id/btn7"
@@ -95,7 +96,5 @@
             android:gravity="center"
             android:onClick="btnClick"
             android:text="" />
-
-
     </TableRow>
 </TableLayout>
