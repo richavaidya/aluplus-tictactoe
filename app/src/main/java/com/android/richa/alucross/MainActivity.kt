@@ -8,6 +8,9 @@ import android.view.View
 import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.TextView
+
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -59,7 +62,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnSelected.isEnabled = false
-
+        val tv1 = findViewById(R.id.player) as TextView
+        tv1.text = "Player " + activePlayer + " 's turn"
         checkWinner()
     }
 
@@ -147,7 +151,7 @@ class MainActivity : AppCompatActivity() {
             btn8.isEnabled = false;
             btn9.isEnabled = false;
 
-            Toast.makeText(this, "Winner is Mr. Player: " + winner, Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Winner is Player: " + winner, Toast.LENGTH_LONG).show()
             getResult()
         }
         else
